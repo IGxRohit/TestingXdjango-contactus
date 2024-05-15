@@ -6,6 +6,9 @@ def home(request):
     return render(request,"home.html")
 def contact(request):
     return render(request,"contact.html")
+def services(request):
+    dataall=contactsave.objects.all
+    return render(request,"services.html",{"data":dataall})
 def savedata(request):
     if request.method=="POST":
      name=request.POST.get("name")

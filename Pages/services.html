@@ -1,0 +1,14 @@
+{% extends "nav.html" %}{% block x %}
+
+<body>
+    {% for i in data %}
+    <div style="border: 1px solid #ccc; border-radius: 10px; padding: 20px; width: 300px; font-family: Arial, sans-serif; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <h2 style="margin-top: 0; color: #333;">Contact Information</h2>
+        <p><strong>Name:</strong> <span style="color: #555;">{{i.name}}</span></p>
+        <p><strong>Email:</strong> <span style="color: #555;">{{i.email}}</span></p>
+        <p><strong>Number:</strong> <span style="color: #555;">{{i.number}}</span></p>
+        <p><strong>Message:</strong></p>
+        <p style="color: #555;">{{i.msg}}</p>
+    </div>
+    {% endfor %}
+</body>{% endblock x %}
