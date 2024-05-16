@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 {% extends "nav.html" %}{% block x %}<body>
     {% for i in all %}
+=======
+{% extends "nav.html" %}{% block x %}
+
+<body>
+    {% for i in data %}
+>>>>>>> 15e090cdaf9aac0b34ba82e0366fa3ab391b7393
     <div style="border: 1px solid #ccc; border-radius: 10px; padding: 20px; width: 300px; font-family: Arial, sans-serif; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
         <h2 style="margin-top: 0; color: #333;">Contact Information</h2>
         <p><strong>Name:</strong> <span style="color: #555;">{{i.name}}</span></p>
@@ -7,6 +14,7 @@
         <p><strong>Number:</strong> <span style="color: #555;">{{i.number}}</span></p>
         <p><strong>Message:</strong></p>
         <p style="color: #555;">{{i.msg}}</p>
+<<<<<<< HEAD
         <div style="display: flex;"> 
             <button style="background-color: #28a745; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; margin-right: 10px;"
                     onmouseover="this.style.backgroundColor='#218838';"
@@ -17,6 +25,8 @@
                     onmouseout="this.style.backgroundColor='#dc3545';">Delete</button>
                 </form>
         </div>
+=======
+>>>>>>> 15e090cdaf9aac0b34ba82e0366fa3ab391b7393
     </div>
     {% endfor %}
 </body>{% endblock x %}
