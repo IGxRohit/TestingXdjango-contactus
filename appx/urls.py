@@ -7,6 +7,8 @@ urlpatterns = [
     path('contact/',views.contact,name="contact"),
     path('savedata',views.savedata,name="savedata"),
     path('services/',views.services,name="services"),
-    path('delete/<int:id>',views.delete)
+    path('delete/<int:id>',views.delete),
+    path('upd/<int:id>',views.updateform),
+    path('updating/<int:id>',views.update)
 
 ]

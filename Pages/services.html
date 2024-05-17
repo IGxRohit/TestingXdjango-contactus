@@ -9,9 +9,10 @@
         <p><strong>Message:</strong></p>
         <p style="color: #555;">{{i.msg}}</p>
         <div style="display: flex;"> 
+            <form action="/upd/{{i.id}}">
             <button style="background-color: #28a745; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; margin-right: 10px;"
                     onmouseover="this.style.backgroundColor='#218838';"
-                    onmouseout="this.style.backgroundColor='#28a745';">Update</button>
+                    onmouseout="this.style.backgroundColor='#28a745';">Update</button></form>
                     <form action="/delete/{{i.id}}">
             <button style="background-color: #dc3545; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;"
                     onmouseover="this.style.backgroundColor='#c82333';"

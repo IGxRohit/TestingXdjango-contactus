@@ -22,3 +22,23 @@ def savedata(request):
      data=contactsave(name=name,email=email,number=number,msg=msg)
      data.save()
      return redirect("contact")
+    
+
+def updateform(request,id):
+     data=contactsave.objects.get(id=id)
+     return render(request,"updateform.html",{"alldata":data})
+
+def update(request,id):
+     data=contactsave.objects.get(id=id)
+     if request.method=="POST":
+       name=request.POST.get("uname")
+       email=request.POST.get("uemail")
+       number=request.POST.get("unumber")
+       msg=request.POST.get("umsg")
+       data.name=name
+       data.email=email
+       data.number=number
+       data.msg=msg
+       data.save()
+     return redirect("services")
+         
